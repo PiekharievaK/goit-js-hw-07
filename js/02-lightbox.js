@@ -8,9 +8,9 @@ const photoGalleryMarkup = CreateGalleryElements(galleryItems);
 
 function CreateGalleryElements (gallery) {
     return gallery.map((item) => {
-        return `<a class="gallery__item" href="${item.original}">
+        return `<li><a class="gallery__item" href="${item.original}">
         <img class="gallery__image" src="${item.preview }" alt="${item.description}" />
-        </a>`           
+        </a></li>`           
     }).join(``)
     
 }
